@@ -1,0 +1,14 @@
+@use "./reset.scss";
+@use "./variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 100svh;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}

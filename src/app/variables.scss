@@ -1,0 +1,20 @@
+:root {
+  --primary-text-color: #929292;
+  --secondary-text-color: #555;
+  --contrast-text-color:#aaa;
+
+  --primary-title-color: linear-gradient(
+    to right,
+    #787878 0%,
+    #787878 20%,
+    #d8d8d8 40%,
+    #d8d8d8 60%,
+    #787878 80%,
+    #787878 100%
+  );
+  --secondary-title-color: linear-gradient(to right, #d8d8d8, #787878);
+  --tertiary-title-color: #787878;
+
+  --primary-bg-color: #202020;
+  --secondary-bg-color: #292929;
+}

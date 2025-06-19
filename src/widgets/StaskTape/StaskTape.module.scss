@@ -1,0 +1,39 @@
+.stack-tape-container {
+  position: relative;
+  width: 100%;
+  min-height: 20px;
+  overflow: hidden;
+  margin-top: 2rem;
+
+  .stack-tape {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    animation: slide 25s linear infinite;
+  }
+
+  .left-shadow {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(to right, #202020, transparent);
+    width: 100px;
+    height: 100%;
+  }
+
+  .right-shadow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, #202020, transparent);
+    width: 100px;
+    height: 100%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }100%{
+    transform: translateX(-1065px);
+  }
+}

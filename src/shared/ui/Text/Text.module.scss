@@ -1,0 +1,15 @@
+.text {
+  display: inline-block;
+  font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);
+  word-break: break-word;
+
+  &__primary {
+    color: var(--primary-text-color);
+  }
+  &__secondary {
+    color: var(--secondary-text-color);
+  }
+  &__tertiary {
+    color: var(--contrast-text-color);
+  }
+}

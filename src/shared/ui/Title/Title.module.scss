@@ -1,0 +1,28 @@
+@mixin gradient-text($bg-color) {
+  background: $bg-color;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.title {
+  display: inline-block;
+  text-align: center;
+
+  &__primary {
+    @include gradient-text(var(--primary-title-color));
+  }
+  &__secondary {
+    @include gradient-text(var(--secondary-title-color));
+  }
+}
+
+h1 {
+  font-size: clamp(2rem, -0.143rem + 5.714vw, 5rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 0.429rem + 2.857vw, 3rem);
+  font-weight: 700;
+}
