@@ -1,0 +1,34 @@
+.project-point {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border: 4px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px var(--primary-border-color);
+  transition: all 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 0 2px var(--secondary-border-color);
+  }
+
+  &:hover .links {
+    background-color: rgba(255,255,255,0.2);
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+
+  .links {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+}
