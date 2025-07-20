@@ -1,0 +1,43 @@
+.subtitle {
+  &__white {
+    color: var(--white-color);
+  }
+  &__gray10 {
+    color: var(--gray10-color);
+  }
+  &__gray30 {
+    color: var(--gray30-color);
+  }
+
+  &__regular {
+    font-weight: 400;
+  }
+  &__medium {
+    font-weight: 500;
+  }
+  &__semi_bold {
+    font-weight: 600;
+  }
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__xs {
+    font-size: 12px;
+  }
+  &__sm {
+    font-size: 14px;
+  }
+  &__md {
+    font-size: 18px;
+  }
+  &__lg {
+    font-size: 20px;
+  }
+  &__xl {
+    font-size: 24px;
+  }
+  &__xxl {
+    font-size: 32px;
+  }
+}
