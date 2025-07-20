@@ -3,18 +3,18 @@ import cx from "classix";
 import type { TextType } from "@/shared/types/text.type";
 
 function Subtitle({
-  children,
-  weight,
-  size,
-  color,
-  className,
+  children = "",
+  weight = "medium",
+  size = "md",
+  color = "white",
+  className = "",
   ...props
 }: TextType) {
   const cls = cx(
     styles.subtitle,
-    styles[`subtitle_${weight}`],
-    styles[`subtitle_${size}`],
-    styles[`subtitle_${color}`],
+    styles[`subtitle__${weight}`],
+    styles[`subtitle__${size}`],
+    styles[`subtitle__${color}`],
     className,
   );
 

@@ -3,18 +3,18 @@ import cx from "classix";
 import type { TextType } from "@/shared/types/text.type";
 
 function Text({
-  children,
-  weight,
-  size,
-  color,
-  className,
+  children = "",
+  weight = "medium",
+  size = "md",
+  color = "white",
+  className = "",
   ...props
 }: TextType) {
   const cls = cx(
     styles.text,
-    styles[`text_${weight}`],
-    styles[`text_${size}`],
-    styles[`text_${color}`],
+    styles[`text__${weight}`],
+    styles[`text__${size}`],
+    styles[`text__${color}`],
     className,
   );
 
