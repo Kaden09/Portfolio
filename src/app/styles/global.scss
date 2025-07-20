@@ -1,0 +1,9 @@
+@use "./variables.scss";
+@use "./reset.scss";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-bg-color);
+}
