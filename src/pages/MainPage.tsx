@@ -3,6 +3,7 @@ import styles from "./MainPage.module.scss";
 import Subtitle from "@/shared/ui/TextComponents/Subtitle";
 import Text from "@/shared/ui/TextComponents/Text";
 import SocialsList from "@/shared/ui/SocialsList/SocialsList";
+import SkillsList from "@/shared/ui/SkillsList/SkillsList";
 
 function MainPage() {
   return (
@@ -11,6 +12,7 @@ function MainPage() {
       <Subtitle>Main Page</Subtitle>
       <Text>Hello world</Text>
       <SocialsList />
+      <SkillsList />
     </div>
   );
 }

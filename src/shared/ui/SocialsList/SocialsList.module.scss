@@ -1,4 +1,12 @@
 .socials {
   display: flex;
   gap: 4px;
+
+  .icon {
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: brightness(0.7);
+    }
+  }
 }

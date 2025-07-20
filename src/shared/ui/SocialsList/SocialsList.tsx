@@ -6,7 +6,7 @@ function SocialsList() {
     <div className={styles.socials}>
       {socials.map(({ icon: Icon, link }) => (
         <a key={link} href={link} target="_blank">
-          <Icon />
+          <Icon className={styles.icon} />
         </a>
       ))}
     </div>
