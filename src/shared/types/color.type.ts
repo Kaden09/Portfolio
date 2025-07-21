@@ -1,1 +1,1 @@
-export type ColorType = "white" | "gray10" | "gray30";
+export type ColorType = "white" | "white10" | "gray10" | "gray30";

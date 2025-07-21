@@ -25,67 +25,67 @@ interface ISkills {
 export const skills: ISkills[] = [
   {
     id: "1",
-    icon: CSS,
-  },
-  {
-    id: "2",
-    icon: Figma,
-  },
-  {
-    id: "3",
-    icon: GitHub,
-  },
-  {
-    id: "4",
     icon: HTML,
   },
   {
-    id: "5",
+    id: "2",
+    icon: CSS,
+  },
+  {
+    id: "3",
     icon: JavaScript,
   },
   {
-    id: "6",
-    icon: NextJS,
-  },
-  {
-    id: "7",
-    icon: Npm,
-  },
-  {
-    id: "8",
-    icon: Photoshop,
-  },
-  {
-    id: "9",
-    icon: Pnpm,
-  },
-  {
-    id: "10",
-    icon: Postman,
-  },
-  {
-    id: "11",
-    icon: React,
-  },
-  {
-    id: "12",
-    icon: Redux,
-  },
-  {
-    id: "13",
-    icon: Sass,
-  },
-  {
-    id: "14",
-    icon: Tailwind,
-  },
-  {
-    id: "15",
+    id: "4",
     icon: TypeScript,
   },
   {
-    id: "16",
+    id: "5",
+    icon: React,
+  },
+  {
+    id: "6",
+    icon: Sass,
+  },
+  {
+    id: "7",
+    icon: NextJS,
+  },
+  {
+    id: "8",
+    icon: Tailwind,
+  },
+  {
+    id: "9",
+    icon: Redux,
+  },
+  {
+    id: "10",
+    icon: Yarn,
+  },
+  {
+    id: "11",
+    icon: Npm,
+  },
+  {
+    id: "12",
+    icon: Pnpm,
+  },
+  {
+    id: "13",
     icon: Vite,
+  },
+  {
+    id: "14",
+    icon: Figma,
+  },
+  {
+    id: "15",
+    icon: Photoshop,
+  },
+  {
+    id: "16",
+    icon: GitHub,
   },
   {
     id: "17",
@@ -93,6 +93,6 @@ export const skills: ISkills[] = [
   },
   {
     id: "18",
-    icon: Yarn,
+    icon: Postman,
   },
 ];

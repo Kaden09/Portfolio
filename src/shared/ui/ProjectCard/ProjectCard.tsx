@@ -28,7 +28,7 @@ function ProjectCard({
           <Title>{title}</Title>
           <div className={styles.subtitle}>
             {team ? <DoubleStarIcon /> : <StarIcon />}
-            <Subtitle color="gray10">
+            <Subtitle color="white10">
               {team ? "Team project" : "Solo Project"}
             </Subtitle>
           </div>
@@ -36,13 +36,13 @@ function ProjectCard({
 
         <div className={styles["hr-line"]} />
 
-        <Subtitle color="gray10" className={styles.stack}>
+        <Subtitle color="white10" className={styles.stack}>
           {stack?.join(" • ")}
         </Subtitle>
       </div>
 
       <div className={styles.blackout} />
-      <a href={link} className={styles["project-link"]} />
+      <a href={link} target="_blank" className={styles["project-link"]} />
       <FillStar className={styles["fill-star"]} />
     </div>
   );
