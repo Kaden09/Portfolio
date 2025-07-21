@@ -5,11 +5,15 @@ import Contacts from "@/widgets/Contacts/Contacts";
 import Skills from "@/widgets/Skills/Skills";
 import AboutMe from "@/widgets/AboutMe/AboutMe";
 import Projects from "@/widgets/Projects/Projects";
+import Profile from "@/widgets/Profile/Profile";
 
 function MainPage() {
   return (
     <div className={styles.wrapper}>
-      <Contacts />
+      <header className={styles.header}>
+        <Profile />
+        <Contacts />
+      </header>
       <main className={styles.main}>
         <Skills />
         <AboutMe />

@@ -7,6 +7,7 @@ function ProjectsList() {
     <div className={styles["projects-list"]}>
       {projects.map((project) => (
         <ProjectCard
+          key={project.title}
           title={project.title}
           team={project.team}
           stack={project.stack}

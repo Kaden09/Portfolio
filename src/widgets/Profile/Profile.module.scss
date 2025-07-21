@@ -1,0 +1,40 @@
+.profile {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  padding: 12px;
+  border-radius: 16px;
+  background: url("@/shared/assets/bg/profile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  .avatar {
+    width: 137px;
+    height: 137px;
+    border-radius: 8px;
+    background: url("@/shared/assets/photo/avatar.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    filter: brightness(0.8);
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .star {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+  }
+}

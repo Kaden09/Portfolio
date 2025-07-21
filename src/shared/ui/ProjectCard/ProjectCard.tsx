@@ -41,9 +41,8 @@ function ProjectCard({
         </Subtitle>
       </div>
 
-      <div className={styles.blackout} />
       <a href={link} target="_blank" className={styles["project-link"]} />
-      <FillStar className={styles["fill-star"]} />
+      <FillStar className={styles.star} />
     </div>
   );
 }
