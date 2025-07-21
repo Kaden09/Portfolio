@@ -1,0 +1,18 @@
+.codewars {
+  display: flex;
+  justify-content: center;
+  padding: 9px;
+  width: fit-content;
+  border-radius: 16px;
+  background: url("@/shared/assets/bg/codewars.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+
+  .image {
+    transition: filter 0.3s ease;
+    &:hover {
+        filter: brightness(0.8);
+    }
+  }
+}
