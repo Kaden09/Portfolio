@@ -1,13 +1,13 @@
-.contacts {
+.skills {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 28px;
-  padding: 17px;
+  gap: 20px;
+  padding: 12px;
   width: fit-content;
   border-radius: 16px;
-  background: url("@/shared/assets/bg/contacts.svg");
+  background: url("@/shared/assets/bg/skills.svg");
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
