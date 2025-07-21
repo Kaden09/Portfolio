@@ -1,0 +1,11 @@
+.work-together {
+  display: flex;
+  justify-content: center;
+  padding: 17px;
+  width: 100%;
+  border-radius: 16px;
+  background: url("@/shared/assets/bg/codewars.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
