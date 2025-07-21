@@ -5,11 +5,13 @@ import Contacts from "@/widgets/Contacts/Contacts";
 import Skills from "@/widgets/Skills/Skills";
 import AboutMe from "@/widgets/AboutMe/AboutMe";
 import ProjectList from "@/widgets/ProjectsList/ProjectList";
+import GitHubButton from "@/shared/ui/GitHubButton/GitHubButton";
 
 function MainPage() {
   return (
     <div className={styles.wrapper}>
       <Contacts />
+      <GitHubButton />
       <main className={styles.main}>
         <Skills />
         <AboutMe />

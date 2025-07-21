@@ -11,7 +11,17 @@ export const projects: ProjectCardProps[] = [
   {
     title: "Sushi Mania",
     team: false,
-    stack: ["Next.js", "TS", "Zustand", "Sass", "Prettier", "Stylelint", "ESLint", "Swiper", "SVGR"],
+    stack: [
+      "Next.js",
+      "TS",
+      "Zustand",
+      "Sass",
+      "Prettier",
+      "Stylelint",
+      "ESLint",
+      "Swiper",
+      "SVGR",
+    ],
     bgImg: "src/shared/assets/bg/redProject.svg",
     link: "https://github.com/Kaden09/SushiMania.git",
   },
