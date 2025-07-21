@@ -4,7 +4,7 @@ import type { TextType } from "@/shared/types/text.type";
 
 function Text({
   children = "",
-  weight = "medium",
+  weight = "regular",
   size = "md",
   color = "white",
   className = "",

@@ -5,12 +5,12 @@
   flex-direction: column;
   gap: 20px;
   padding: 12px;
-  width: fit-content;
+  padding-bottom: 20px;
   border-radius: 16px;
   background: url("@/shared/assets/bg/skills.svg");
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: cover;
   overflow: hidden;
 
   .title {

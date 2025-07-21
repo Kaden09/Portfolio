@@ -1,14 +1,13 @@
-.contacts {
+.about-me {
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 28px;
-  padding: 17px;
-  padding-top: 24px;
-  width: fit-content;
+  gap: 12px;
+  padding: 24px;
   border-radius: 16px;
-  background: url("@/shared/assets/bg/contacts.svg");
+  background: url("@/shared/assets/bg/aboutMe.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,6 +16,10 @@
   .title {
     width: 100%;
     text-align: start;
-    margin-left: 24px;
+  }
+
+  .text {
+    width: 500px;
+    max-width: 500px;
   }
 }

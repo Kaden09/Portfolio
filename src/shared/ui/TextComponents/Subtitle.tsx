@@ -5,7 +5,7 @@ import type { TextType } from "@/shared/types/text.type";
 function Subtitle({
   children = "",
   weight = "medium",
-  size = "md",
+  size = "xs",
   color = "gray30",
   className = "",
   ...props

@@ -1,18 +1,22 @@
 import styles from "./MainPage.module.scss";
-import SkillsList from "@/shared/ui/SkillsList/SkillsList";
 import Codewars from "@/widgets/Codewars/Codewars";
 import WorkTogether from "@/widgets/WorkTogether/WorkTogether";
 import Contacts from "@/widgets/Contacts/Contacts";
 import Skills from "@/widgets/Skills/Skills";
+import AboutMe from "@/widgets/AboutMe/AboutMe";
 
 function MainPage() {
   return (
     <div className={styles.wrapper}>
-      <SkillsList />
-      <Codewars />
-      <WorkTogether />
       <Contacts />
-      <Skills />
+      <main className={styles.main}>
+        <Skills />
+        <AboutMe />
+      </main>
+      <footer className={styles.footer}>
+        <Codewars />
+        <WorkTogether />
+      </footer>
     </div>
   );
 }
