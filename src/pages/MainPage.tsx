@@ -6,6 +6,7 @@ import SocialsList from "@/shared/ui/SocialsList/SocialsList";
 import SkillsList from "@/shared/ui/SkillsList/SkillsList";
 import Codewars from "@/widgets/Codewars/Codewars";
 import WorkTogether from "@/widgets/WorkTogether/WorkTogether";
+import Contacts from "@/widgets/Contacts/Contacts";
 
 function MainPage() {
   return (
@@ -17,6 +18,7 @@ function MainPage() {
       <SkillsList />
       <Codewars />
       <WorkTogether />
+      <Contacts />
     </div>
   );
 }

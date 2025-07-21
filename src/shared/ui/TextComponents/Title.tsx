@@ -5,7 +5,7 @@ import type { TextType } from "@/shared/types/text.type";
 function Title({
   children = "",
   weight = "medium",
-  size = "md",
+  size = "lg",
   color = "white",
   className = "",
   ...props

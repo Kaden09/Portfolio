@@ -1,0 +1,24 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+  padding: 17px;
+  width: fit-content;
+  border-radius: 16px;
+  background: url("@/shared/assets/bg/contacts.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  overflow: hidden;
+
+  .contacts-list {
+    margin-top: 10px;
+  }
+
+  .title {
+    width: 100%;
+    text-align: start;
+  }
+}

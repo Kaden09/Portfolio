@@ -6,7 +6,7 @@ function Subtitle({
   children = "",
   weight = "medium",
   size = "md",
-  color = "white",
+  color = "gray30",
   className = "",
   ...props
 }: TextType) {
