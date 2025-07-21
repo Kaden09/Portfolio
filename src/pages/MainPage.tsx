@@ -4,19 +4,17 @@ import WorkTogether from "@/widgets/WorkTogether/WorkTogether";
 import Contacts from "@/widgets/Contacts/Contacts";
 import Skills from "@/widgets/Skills/Skills";
 import AboutMe from "@/widgets/AboutMe/AboutMe";
-import ProjectList from "@/widgets/ProjectsList/ProjectList";
-import GitHubButton from "@/shared/ui/GitHubButton/GitHubButton";
+import Projects from "@/widgets/Projects/Projects";
 
 function MainPage() {
   return (
     <div className={styles.wrapper}>
       <Contacts />
-      <GitHubButton />
       <main className={styles.main}>
         <Skills />
         <AboutMe />
       </main>
-      <ProjectList />
+      <Projects />
       <footer className={styles.footer}>
         <Codewars />
         <WorkTogether />

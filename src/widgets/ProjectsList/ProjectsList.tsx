@@ -1,8 +1,8 @@
 import ProjectCard from "@/shared/ui/ProjectCard/ProjectCard";
-import styles from "./ProjectList.module.scss";
+import styles from "./ProjectsList.module.scss";
 import { projects } from "@/shared/api/projects";
 
-function ProjectList() {
+function ProjectsList() {
   return (
     <div className={styles["projects-list"]}>
       {projects.map((project) => (
@@ -18,4 +18,4 @@ function ProjectList() {
   );
 }
 
-export default ProjectList;
+export default ProjectsList;

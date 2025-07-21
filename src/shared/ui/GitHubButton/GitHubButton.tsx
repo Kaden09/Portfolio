@@ -4,10 +4,14 @@ import styles from "./GitHubButton.module.scss";
 
 function GitHubButton() {
   return (
-    <button className={styles["github-button"]}>
+    <a
+      href="https://github.com/Kaden09"
+      target="_blank"
+      className={styles["github-button"]}
+    >
       <GitHubIcon />
       <Title size="md">View More on GitHub</Title>
-    </button>
+    </a>
   );
 }
 
