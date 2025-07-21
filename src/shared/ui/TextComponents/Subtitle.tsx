@@ -20,7 +20,7 @@ function Subtitle({
 
   return (
     <h4 className={cls} {...props}>
-      ✦ {children}
+      {children}
     </h4>
   );
 }

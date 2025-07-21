@@ -8,7 +8,7 @@ function AboutMe() {
     <div className={styles["about-me"]}>
       <div className={styles.title}>
         <Title>A Few Words About Myself.</Title>
-        <Subtitle>Getting to Know Me</Subtitle>
+        <Subtitle>✦ Getting to Know Me</Subtitle>
       </div>
       <Text size="sm" className={styles.text}>
         <b>Frontend Developer</b> (2+ years with React). I build modern web apps

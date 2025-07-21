@@ -8,7 +8,7 @@ function Skills() {
     <div className={styles.skills}>
       <SkillsList />
       <div className={styles.title}>
-        <Subtitle>This is my life</Subtitle>
+        <Subtitle>✦ This is my life</Subtitle>
         <Title>My Knowledge and Skills.</Title>
       </div>
     </div>
