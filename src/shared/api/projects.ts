@@ -5,7 +5,7 @@ export const projects: ProjectCardProps[] = [
     title: "Film Flow",
     team: true,
     stack: ["React", "Redux", "JS", "Python", "Firebase", "Swiper", "Prettier"],
-    bgImg: "src/shared/assets/bg/blueProject.svg",
+    bgImg: "blue",
     link: "https://github.com/Kaden09/Kino.git",
   },
   {
@@ -22,14 +22,14 @@ export const projects: ProjectCardProps[] = [
       "Swiper",
       "SVGR",
     ],
-    bgImg: "src/shared/assets/bg/redProject.svg",
+    bgImg: "red",
     link: "https://github.com/Kaden09/SushiMania.git",
   },
   {
     title: "Chars Counter",
     team: false,
     stack: ["React", "TypeScript", "Sass", "ESLint", "Classix", "Vite"],
-    bgImg: "src/shared/assets/bg/orangeProject.svg",
+    bgImg: "orange",
     link: "https://github.com/Kaden09/CharsCounter.git",
   },
 ];

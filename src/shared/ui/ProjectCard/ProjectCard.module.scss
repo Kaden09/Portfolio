@@ -1,3 +1,5 @@
+@use "@/app/styles/mixins.scss" as *;
+
 .project-card {
   position: relative;
   display: flex;
@@ -12,6 +14,18 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
   overflow: hidden;
   cursor: pointer;
+
+  &__blue {
+    @include projectBg("@/shared/assets/bg/blueProject.svg");
+  }
+
+  &__red {
+    @include projectBg("@/shared/assets/bg/redProject.svg");
+  }
+
+  &__orange {
+    @include projectBg("@/shared/assets/bg/orangeProject.svg");
+  }
 
   &:hover {
     .info {

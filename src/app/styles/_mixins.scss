@@ -28,3 +28,10 @@
   margin-left: $margin;
   gap: 2px;
 }
+
+@mixin projectBg($bgImg) {
+  background: url($bgImg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

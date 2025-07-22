@@ -5,23 +5,18 @@ import Subtitle from "../TextComponents/Subtitle";
 import StarIcon from "@/shared/assets/icons/star.svg?react";
 import DoubleStarIcon from "@/shared/assets/icons/doubleStar.svg?react";
 import FillStar from "@/shared/assets/icons/fillStar.svg?react";
+import cx from "classix";
 
 function ProjectCard({
   title = "",
   team = false,
   stack = [],
-  bgImg = "",
+  bgImg = "blue",
   link = "",
 }: ProjectCardProps) {
   return (
     <div
-      className={styles["project-card"]}
-      style={{
-        background: `url(${bgImg})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className={cx(styles["project-card"], styles[`project-card__${bgImg}`])}
     >
       <div className={styles.info}>
         <div className={styles.title}>
