@@ -8,5 +8,10 @@
 
   .title {
     @include title;
+
+    @media (max-width: 1300px) {
+      text-align: center;
+      margin-left: 0;
+    }
   }
 }

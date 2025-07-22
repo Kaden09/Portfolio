@@ -1,14 +1,37 @@
 .wrapper {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 8px;
-  width: 858px;
+  height: 100%;
+  width: clamp(18.75rem, 8.786rem + 49.821vw, 53.625rem);
+
+  @media (max-width: 1300px) {
+    padding: 50px 0;
+  }
 
   .header,
   .main,
   .footer {
     display: flex;
     gap: 8px;
+  }
+
+  .main {
+    flex-wrap: wrap;
+  }
+
+  .header,
+  .main {
+    @media (max-width: 1300px) {
+      flex-direction: column;
+    }
+  }
+
+  .footer {
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
   }
 
   .projects {

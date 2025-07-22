@@ -5,7 +5,7 @@
   max-width: 280px;
 
   .icon {
-    width: 40px;
+    width: clamp(2.438rem, 2.42rem + 0.089vw, 2.5rem);
     transition: filter 0.3s ease;
 
     &:hover {

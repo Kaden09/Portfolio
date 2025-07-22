@@ -4,6 +4,7 @@
 .about-me {
   @include bgImg(12px, 24px, center, column, "@/shared/assets/bg/aboutMe.svg");
   flex: 1;
+  align-items: start;
   animation: fadeIn 1s;
 
   .title {
@@ -12,6 +13,14 @@
 
   .text {
     width: 500px;
-    max-width: 500px;
+    @media (max-width: 1400px) {
+      width: 450px;
+    }
+    @media (max-width: 1300px) {
+      width: 700px;
+    }
+    @media (max-width: 1200px) {
+      width: clamp(15.625rem, 7.67rem + 39.773vw, 37.5rem);
+    }
   }
 }

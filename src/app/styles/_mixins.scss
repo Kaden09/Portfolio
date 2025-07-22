@@ -20,8 +20,11 @@
   overflow: hidden;
 }
 
-@mixin title($margin: 24px) {
+@mixin title($margin: clamp(0.75rem, 0.536rem + 1.071vw, 1.5rem)) {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   text-align: start;
   margin-left: $margin;
+  gap: 2px;
 }

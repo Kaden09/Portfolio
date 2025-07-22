@@ -9,13 +9,8 @@ body {
   height: 100vh;
   background-color: var(--primary-bg-color);
   font-family: "Inter", sans-serif;
-}
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+  @media (max-width: 1300px) {
+    align-items: start;
   }
 }

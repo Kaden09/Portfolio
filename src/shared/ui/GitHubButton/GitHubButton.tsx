@@ -1,8 +1,25 @@
 import GitHubIcon from "@/shared/assets/icons/github.svg?react";
 import Title from "../TextComponents/Title";
 import styles from "./GitHubButton.module.scss";
+import { useEffect, useState } from "react";
 
 function GitHubButton() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const buttonText = windowWidth > 768 ? "View More on GitHub" : "GitHub";
+
   return (
     <a
       href="https://github.com/Kaden09"
@@ -10,7 +27,7 @@ function GitHubButton() {
       className={styles["github-button"]}
     >
       <GitHubIcon />
-      <Title size="md">View More on GitHub</Title>
+      {windowWidth > 400 ? <Title size="md">{buttonText}</Title> : <></>}
     </a>
   );
 }

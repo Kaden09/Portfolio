@@ -2,7 +2,13 @@
 @use "@/app/styles/animations.scss" as *;
 
 .work-together {
-  @include bgImg(0, 16px, center, row, "@/shared/assets/bg/workTogether.svg");
+  @include bgImg(
+    0,
+    clamp(0.75rem, 0.679rem + 0.357vw, 1rem),
+    center,
+    row,
+    "@/shared/assets/bg/workTogether.svg"
+  );
   width: 100%;
   animation: fadeIn 1s;
 }

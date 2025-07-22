@@ -28,21 +28,21 @@
   }
 
   &__xs {
-    font-size: 12px;
+    font-size: clamp(0.625rem, 0.589rem + 0.179vw, 0.75rem);
   }
   &__sm {
-    font-size: 14px;
+    font-size: clamp(0.625rem, 0.554rem + 0.357vw, 0.875rem);
   }
   &__md {
-    font-size: 18px;
+    font-size: clamp(0.875rem, 0.804rem + 0.357vw, 1.125rem);
   }
   &__lg {
-    font-size: 20px;
+    font-size: clamp(1rem, 0.929rem + 0.357vw, 1.25rem);
   }
   &__xl {
-    font-size: 24px;
+    font-size: clamp(1.25rem, 1.179rem + 0.357vw, 1.5rem);
   }
   &__xxl {
-    font-size: 32px;
+    font-size: clamp(1.25rem, 1.036rem + 1.071vw, 2rem);
   }
 }

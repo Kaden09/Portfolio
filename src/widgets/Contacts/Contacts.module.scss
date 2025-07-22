@@ -2,12 +2,27 @@
 @use "@/app/styles/animations.scss" as *;
 
 .contacts {
-  @include bgImg(28px, 17px, center, column, "@/shared/assets/bg/contacts.svg");
+  @include bgImg(
+    clamp(1rem, 0.786rem + 1.071vw, 1.75rem),
+    17px,
+    center,
+    column,
+    "@/shared/assets/bg/contacts.svg"
+  );
   padding-top: 24px;
   width: fit-content;
   animation: fadeIn 1s;
 
   .title {
     @include title;
+
+    @media (max-width: 1300px) {
+      text-align: center;
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    width: 100%;
   }
 }

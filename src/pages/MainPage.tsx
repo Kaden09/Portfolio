@@ -17,8 +17,8 @@ function MainPage() {
       <main className={styles.main}>
         <Skills />
         <AboutMe />
+        <Projects />
       </main>
-      <Projects />
       <footer className={styles.footer}>
         <Codewars />
         <WorkTogether />
