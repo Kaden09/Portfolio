@@ -1,22 +1,13 @@
+@use "@/app/styles/mixins.scss" as *;
+@use "@/app/styles/animations.scss" as *;
+
 .contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 28px;
-  padding: 17px;
+  @include bgImg(28px, 17px, center, column, "@/shared/assets/bg/contacts.svg");
   padding-top: 24px;
   width: fit-content;
-  border-radius: 16px;
-  background: url("@/shared/assets/bg/contacts.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  animation: fadeIn 1s;
 
   .title {
-    width: 100%;
-    text-align: start;
-    margin-left: 24px;
+    @include title;
   }
 }

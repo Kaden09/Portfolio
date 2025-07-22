@@ -1,17 +1,11 @@
+@use "@/app/styles/mixins.scss" as *;
+@use "@/app/styles/animations.scss" as *;
+
 .profile {
+  @include bgImg(20px, 12px, start, row, "@/shared/assets/bg/profile.svg");
   position: relative;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 20px;
   flex: 1;
-  padding: 12px;
-  border-radius: 16px;
-  background: url("@/shared/assets/bg/profile.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  animation: fadeIn 1s;
 
   .avatar {
     width: 137px;
@@ -21,6 +15,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     filter: brightness(0.8);
   }

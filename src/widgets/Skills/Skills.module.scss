@@ -1,21 +1,12 @@
+@use "@/app/styles/mixins.scss" as *;
+@use "@/app/styles/animations.scss" as *;
+
 .skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  padding: 12px;
+  @include bgImg(20px, 12px, center, column, "@/shared/assets/bg/skills.svg");
   padding-bottom: 20px;
-  border-radius: 16px;
-  background: url("@/shared/assets/bg/skills.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  animation: fadeIn 1s;
 
   .title {
-    width: 100%;
-    text-align: start;
-    margin-left: 24px;
+    @include title;
   }
 }

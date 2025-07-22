@@ -1,12 +1,8 @@
+@use "@/app/styles/mixins.scss" as *;
+@use "@/app/styles/animations.scss" as *;
+
 .work-together {
-  display: flex;
-  justify-content: center;
-  padding: 16px;
+  @include bgImg(0, 16px, center, row, "@/shared/assets/bg/workTogether.svg");
   width: 100%;
-  border-radius: 16px;
-  background: url("@/shared/assets/bg/workTogether.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  animation: fadeIn 1s;
 }

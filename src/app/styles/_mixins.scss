@@ -1,0 +1,27 @@
+@mixin bgImg(
+  $gap: 20px,
+  $padding: 12px,
+  $justify: center,
+  $direction: column,
+  $url
+) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+  flex-direction: $direction;
+  gap: $gap;
+  padding: $padding;
+  border-radius: 16px;
+  background: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+@mixin title($margin: 24px) {
+  width: 100%;
+  text-align: start;
+  margin-left: $margin;
+}

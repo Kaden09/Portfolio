@@ -1,5 +1,5 @@
 import Subtitle from "@/shared/ui/TextComponents/Subtitle";
-import ProjectsList from "../ProjectsList/ProjectsList";
+import ProjectsList from "@/shared/ui/ProjectsList/ProjectsList";
 import styles from "./Projects.module.scss";
 import Title from "@/shared/ui/TextComponents/Title";
 import GitHubButton from "@/shared/ui/GitHubButton/GitHubButton";
