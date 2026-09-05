@@ -28,6 +28,6 @@ export const projects: ProjectCardProps[] = [
     team: false,
     stack: ["Java", "Spring Boot", "PostgreSQL", "Data JPA", "Lombok", "Docker"],
     bgImg: "orange",
-    link: "https://github.com/Kaden09/CharsCounter.git",
+    link: "https://github.com/Kaden09/java-explore-with-me.git",
   },
 ];
