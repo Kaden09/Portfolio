@@ -9,7 +9,7 @@ function Contacts() {
       <SocialsList />
       <div className={styles.title}>
         <Subtitle>✦ Let's get in touch</Subtitle>
-        <Title>Ways to Reach Me.</Title>
+        <Title size="xl">Ways to Reach Me.</Title>
       </div>
     </div>
   );

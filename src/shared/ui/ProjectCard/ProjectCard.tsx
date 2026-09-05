@@ -5,6 +5,9 @@ import Subtitle from "../TextComponents/Subtitle";
 import StarIcon from "@/shared/assets/icons/star.svg?react";
 import DoubleStarIcon from "@/shared/assets/icons/doubleStar.svg?react";
 import FillStar from "@/shared/assets/icons/fillStar.svg?react";
+import BlueProjectShape from "@/shared/assets/icons/blueProjectShape.svg?react";
+import RedProjectShape from "@/shared/assets/icons/redProjectShape.svg?react";
+import OrangeProjectShape from "@/shared/assets/icons/orangeProjectShape.svg?react";
 import cx from "classix";
 
 function ProjectCard({
@@ -39,6 +42,15 @@ function ProjectCard({
       <div className={styles.blackout} />
       <a href={link} target="_blank" className={styles["project-link"]} />
       <FillStar className={styles.star} />
+      {
+        bgImg === "blue" && <BlueProjectShape className={styles.bgShape} />
+      }
+      {
+        bgImg === "red" && <RedProjectShape className={styles.bgShape} />
+      }
+      {
+        bgImg === "orange" && <OrangeProjectShape className={styles.bgShape} />
+      }
     </div>
   );
 }

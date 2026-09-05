@@ -7,24 +7,37 @@
   align-items: start;
   flex-direction: column;
   flex: 1;
-  min-width: 272px;
+  min-width: 260px;
   height: 170px;
   padding: 16px;
   border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   cursor: pointer;
 
+  .bgShape {
+    position: absolute;
+    top: -60px;
+    left: -40px;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    opacity: 0.2;
+  }
+
   &__blue {
-    @include projectBg("@/shared/assets/bg/blueProject.svg");
+    background: linear-gradient(to top, #021b4dc7, #1c6fffc7);
+    backdrop-filter: blur(25px); 
   }
 
   &__red {
-    @include projectBg("@/shared/assets/bg/redProject.svg");
+    background: linear-gradient(to top, #420606ba, #ff3232ba);
+    backdrop-filter: blur(25px); 
   }
 
   &__orange {
-    @include projectBg("@/shared/assets/bg/orangeProject.svg");
+    background: linear-gradient(to top, #9a4801ba, #ff8b26ba);
+    backdrop-filter: blur(25px); 
   }
 
   &:hover {

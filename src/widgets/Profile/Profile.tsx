@@ -13,7 +13,7 @@ function Profile() {
           <Subtitle>✦ WEB DEVELOPER</Subtitle>
           <Title size="xxl">Maxim Volkov.</Title>
         </div>
-        <Text color="white10">I'm Frontend Developer on React</Text>
+        <Text color="white">I'm Fullstack Developer</Text>
         <Subtitle size="sm">Location: Russia ✦ Glazov</Subtitle>
       </div>
       <FillStar className={styles.star} />

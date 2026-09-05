@@ -2,20 +2,31 @@
 @use "@/app/styles/animations.scss" as *;
 
 .profile {
-  @include bgImg(20px, 12px, start, row, "@/shared/assets/bg/profile.svg");
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 22px;
+  padding: 14px;
+  border-radius: 20px;
+  background: linear-gradient(185deg, #071d4974, #3f79eb74);;
+  border-top: 1px solid #214da3;
+  border-right: 1px solid #214da3;
+  border-bottom: 1px solid #194294;
+  border-left: 1px solid #194294;
+  backdrop-filter: blur(5px); 
   position: relative;
   flex: 1;
-  animation: fadeIn 1s;
+  animation: fadeIn 0.5s ease;
 
   .avatar {
     width: clamp(5.625rem, 4.786rem + 4.196vw, 8.563rem);
     height: clamp(5.625rem, 4.786rem + 4.196vw, 8.563rem);
-    border-radius: 8px;
+    border-radius: 12px;
     background: url("@/shared/assets/photo/avatar.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     filter: brightness(0.8);
   }

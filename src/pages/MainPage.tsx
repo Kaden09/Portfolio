@@ -15,8 +15,8 @@ function MainPage() {
         <Contacts />
       </header>
       <main className={styles.main}>
-        <Skills />
         <AboutMe />
+        <Skills />
         <Projects />
       </main>
       <footer className={styles.footer}>

@@ -1,14 +1,17 @@
 @use "./variables.scss";
 @use "./reset.scss";
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&display=swap');
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-y: auto;
+  padding: 50px 0;
   background-color: var(--primary-bg-color);
-  font-family: "Inter", sans-serif;
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
 
   @media (max-width: 1300px) {
     align-items: start;

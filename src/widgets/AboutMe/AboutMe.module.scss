@@ -2,18 +2,41 @@
 @use "@/app/styles/animations.scss" as *;
 
 .about-me {
-  @include bgImg(12px, 24px, center, column, "@/shared/assets/bg/aboutMe.svg");
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px;
+  border-radius: 20px;
+  background: linear-gradient(185deg, #071d4974, #3f79eb74);
+  border-top: 1px solid #214da3;
+  border-right: 1px solid #214da3;
+  border-bottom: 1px solid #194294;
+  border-left: 1px solid #194294;
+  backdrop-filter: blur(5px); 
   flex: 1;
   align-items: start;
-  animation: fadeIn 1s;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  animation-delay: 0.2s;
+  width: 100%;
+  overflow: hidden;
 
-  .title {
-    @include title(0);
+  .bgShape {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 156px;
+    height: 156px;
+    opacity: 0.15;
+    z-index: -1;
+    transform: translate(50%, -50%);
   }
 
   .text {
-    width: 500px;
-    @media (max-width: 1400px) {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    /* @media (max-width: 1400px) {
       width: 450px;
     }
     @media (max-width: 1300px) {
@@ -21,6 +44,6 @@
     }
     @media (max-width: 1200px) {
       width: clamp(15.625rem, 7.67rem + 39.773vw, 37.5rem);
-    }
+    } */
   }
 }

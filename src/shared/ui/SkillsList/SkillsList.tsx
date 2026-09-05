@@ -1,11 +1,11 @@
-import { skills } from "@/shared/api/skills";
+import { type ISkills } from "@/shared/api/skills";
 import styles from "./SkillsList.module.scss";
 
-function SkillsList() {
+function SkillsList({skills}: { skills: ISkills[] }) {
   return (
     <div className={styles.skills}>
-      {skills.map(({ icon: Icon, id }) => (
-        <Icon key={id} className={styles.icon} />
+      {skills.map(({ icon: Icon }, index) => (
+        <Icon key={index} className={styles.icon} />
       ))}
     </div>
   );

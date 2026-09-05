@@ -3,13 +3,13 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  padding: 8px 24px;
   white-space: nowrap;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 8px;
-  padding: 12px clamp(0.75rem, 0.607rem + 0.714vw, 1.25rem);
+  background-color: #386acdba;
+  border-radius: 12px;
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #386acdea;
   }
 }
