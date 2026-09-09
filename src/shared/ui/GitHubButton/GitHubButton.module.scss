@@ -1,15 +1,40 @@
 .github-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 24px;
-  white-space: nowrap;
-  background-color: #386acdba;
-  border-radius: 12px;
-  transition: background-color 0.3s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 24px;
+	white-space: nowrap;
+	background-color: #386acdba;
+	border-radius: 12px;
+	transition: background-color 0.3s ease;
 
-  &:hover {
-    background-color: #386acdea;
+  .text-full {
+    display: inline;
+  }
+  
+  .text-short {
+    display: none;
+  }
+
+	&:hover {
+		background-color: #386acdea;
+	}
+
+    @media (max-width: 768px) {
+    .text-full {
+      display: none;
+    }
+    
+    .text-short {
+      display: inline;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .text-full,
+    .text-short {
+      display: none;
+    }
   }
 }

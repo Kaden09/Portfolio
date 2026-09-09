@@ -1,0 +1,88 @@
+@use '@/app/styles/mixins.scss' as *;
+@use '@/app/styles/animations.scss' as *;
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 8px;
+	height: 100%;
+	width: clamp(18.75rem, 8.786rem + 49.821vw, 53.625rem);
+
+    header {
+		display: flex;
+		gap: 8px;
+		width: 100%;
+
+		.backButton {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-width: 90px;
+		}
+
+		.titleContainer {
+			flex: 1;
+		}
+	}
+
+    .backButton, .titleContainer, .inDevelopment {
+        @include glass-card(185deg);
+
+        padding: 20px;
+        opacity: 0;
+        animation: fadeIn 0.5s ease forwards;
+    }
+
+	.inDevelopment {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		min-height: 400px;
+		padding: 100px;
+        animation-delay: 0.1s;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.overview {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.github-button {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		padding: 8px 24px;
+	  white-space: nowrap;
+		background-color: #386acdba;
+		border-radius: 12px;
+		transition: background-color 0.3s ease;
+
+		&:hover {
+			background-color: #386acdea;
+		}
+	}
+
+	@media (max-width: 1300px) {
+		padding: 50px 0;
+	}
+
+	.animatedBg {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+}

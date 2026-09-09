@@ -1,22 +1,15 @@
-import ProjectCard from "@/shared/ui/ProjectCard/ProjectCard";
-import styles from "./ProjectsList.module.scss";
-import { projects } from "@/shared/api/projects";
+import ProjectCard from '@/shared/ui/ProjectCard/ProjectCard';
+import styles from './ProjectsList.module.scss';
+import { projects } from '@/shared/constants/projects';
 
 function ProjectsList() {
-  return (
-    <div className={styles["projects-list"]}>
-      {projects.map((project) => (
-        <ProjectCard
-          key={project.title}
-          title={project.title}
-          team={project.team}
-          stack={project.stack}
-          bgImg={project.bgImg}
-          link={project.link}
-        />
-      ))}
-    </div>
-  );
+	return (
+		<div className={styles['projects-list']}>
+			{projects.map((project, index) => (
+				<ProjectCard key={index} {...project} />
+			))}
+		</div>
+	);
 }
 
 export default ProjectsList;

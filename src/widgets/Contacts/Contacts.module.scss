@@ -1,36 +1,31 @@
-@use "@/app/styles/mixins.scss" as *;
-@use "@/app/styles/animations.scss" as *;
+@use '@/app/styles/mixins.scss' as *;
+@use '@/app/styles/animations.scss' as *;
 
 .contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  gap: 25px;
-  padding: 14px;
-  padding-top: 20px;
-  border-radius: 20px;
-  background: linear-gradient(185deg, #071d4974, #3f79eb74);;
-  border-top: 1px solid #214da3;
-  border-right: 1px solid #214da3;
-  border-bottom: 1px solid #194294;
-  border-left: 1px solid #194294;
-  backdrop-filter: blur(5px); 
-  width: fit-content;
-  opacity: 0;
-  animation: fadeIn 0.5s ease forwards;
-  animation-delay: 0.1s;
+	@include glass-card(185deg);
 
-  .title {
-    margin-left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+	gap: 25px;
+	padding: 14px;
+	padding-top: 20px;
+	width: fit-content;
+	opacity: 0;
+	animation: fadeIn 0.5s ease forwards;
+	animation-delay: 0.1s;
 
-    @media (max-width: 1300px) {
-      text-align: center;
-      margin-left: 0;
-    }
-  }
+	.title {
+		margin-left: 10px;
 
-  @media (max-width: 1300px) {
-    width: 100%;
-  }
+		@media (max-width: 1300px) {
+			text-align: center;
+			margin-left: 0;
+		}
+	}
+
+	@media (max-width: 1300px) {
+		width: 100%;
+	}
 }

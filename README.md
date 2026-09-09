@@ -1,6 +1,7 @@
 # My Portfolio
 
-<img width="871" height="762" alt="image" src="https://github.com/user-attachments/assets/380a5628-cd52-4c4d-9286-303169548407" />
+<img alt="image" src="src\shared\assets\photo\projectPreview.jpg" />
+
 
 # About the project
 ### A place where you can learn a little more about me
@@ -9,7 +10,7 @@
 
 1. Clone the repozitory:
 ```bash
-git clone https://github.com/Kaden09/CharsCounter.git
+git clone https://github.com/Kaden09/Portfolio.git
 ```
 2. Install dependencies:
 ```bash
@@ -23,7 +24,7 @@ yarn dev
 
 Open `
 http://localhost:5173/
-` is your browser and enjoy or you can use this link `https://clc.is/ddwn`
+` is your browser and enjoy or you can use this link `https://portfolio-tau-eight-shde4iegoh.vercel.app/`
 
 # Contacts
 

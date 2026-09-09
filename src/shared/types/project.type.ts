@@ -1,7 +1,6 @@
 export type ProjectCardProps = {
-  title: string;
-  team: boolean;
-  stack: string[];
-  bgImg: "blue" | "red" | "orange";
-  link: string;
+	title: string;
+	team: boolean;
+	bgImg: 'blue' | 'red' | 'orange';
+	link: string;
 };

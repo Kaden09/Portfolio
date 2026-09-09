@@ -1,31 +1,26 @@
-@use "@/app/styles/mixins.scss" as *;
-@use "@/app/styles/animations.scss" as *;
+@use '@/app/styles/mixins.scss' as *;
+@use '@/app/styles/animations.scss' as *;
 
 .projects {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 18px;
-  border-radius: 20px;
-  background: linear-gradient(185deg, #071d4974, #3f79eb74);;
-  border-top: 1px solid #214da3;
-  border-right: 1px solid #214da3;
-  border-bottom: 1px solid #194294;
-  border-left: 1px solid #194294;
-  backdrop-filter: blur(5px); 
-  opacity: 0;
-  width: 100%;
-  animation: fadeIn 0.5s ease forwards;
-  animation-delay: 0.4s;
+	@include glass-card(185deg);
 
-  .info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 18px;
+	opacity: 0;
+	width: 100%;
+	animation: fadeIn 0.5s ease forwards;
+	animation-delay: 0.4s;
 
-  .title {
-    @include title(12px);
-  }
+	.info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	.title {
+		@include title(12px);
+	}
 }

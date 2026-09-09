@@ -1,11 +1,11 @@
-import type { ColorType } from "./color.type";
-import type { SizeType } from "./size.type";
-import type { WeightType } from "./weight.type";
+export type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
+export type Weight = 'regular' | 'medium' | 'semi_bold' | 'bold';
+export type Color = 'white' | 'white10' | 'gray10' | 'gray30' | 'blue';
 
-export type TextType = {
-  children: React.ReactNode;
-  weight?: WeightType;
-  size?: SizeType;
-  color?: ColorType;
-  className?: string;
+export type TextProps = {
+	children: React.ReactNode;
+	weight?: Weight;
+	size?: Size;
+	color?: Color;
+	className?: string;
 } & React.HTMLAttributes<HTMLHeadingElement | HTMLParagraphElement>;

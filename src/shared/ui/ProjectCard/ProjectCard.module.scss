@@ -1,134 +1,105 @@
-@use "@/app/styles/mixins.scss" as *;
+@use '@/app/styles/mixins.scss' as *;
 
 .project-card {
-  position: relative;
-  display: flex;
-  justify-content: end;
-  align-items: start;
-  flex-direction: column;
-  flex: 1;
-  min-width: 260px;
-  height: 170px;
-  padding: 16px;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  cursor: pointer;
+	position: relative;
+	display: flex;
+	justify-content: end;
+	align-items: start;
+	flex-direction: column;
+	flex: 1;
+	min-width: 260px;
+	height: 170px;
+	padding: 16px;
+	border-radius: 16px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+	cursor: pointer;
 
-  .bgShape {
-    position: absolute;
-    top: -60px;
-    left: -40px;
-    width: 150px;
-    height: 150px;
-    z-index: -1;
-    opacity: 0.2;
-  }
+	.bgShape {
+		position: absolute;
+		top: -60px;
+		left: -40px;
+		width: 150px;
+		height: 150px;
+		z-index: -1;
+		opacity: 0.2;
+	}
 
-  &__blue {
-    background: linear-gradient(to top, #021b4dc7, #1c6fffc7);
-    backdrop-filter: blur(25px); 
-  }
+	&__blue {
+		background: linear-gradient(to top, #021b4dc7, #1c6fffc7);
+		backdrop-filter: blur(25px);
+	}
 
-  &__red {
-    background: linear-gradient(to top, #420606ba, #ff3232ba);
-    backdrop-filter: blur(25px); 
-  }
+	&__red {
+		background: linear-gradient(to top, #420606ba, #ff3232ba);
+		backdrop-filter: blur(25px);
+	}
 
-  &__orange {
-    background: linear-gradient(to top, #9a4801ba, #ff8b26ba);
-    backdrop-filter: blur(25px); 
-  }
+	&__orange {
+		background: linear-gradient(to top, #9a4801ba, #ff8b26ba);
+		backdrop-filter: blur(25px);
+	}
 
-  &:hover {
-    .info {
-      transform: translateY(0);
-    }
+	&:hover {
+		.info {
+			transform: translateY(0);
+		}
 
-    .stack,
-    .hr-line {
-      opacity: 1;
-    }
+		.stack,
+		.hr-line {
+			opacity: 1;
+		}
 
-    .blackout {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-  }
+		.blackout {
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+	}
 
-  .info {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    transform: translateY(50px);
-    z-index: 2;
-    transition: transform 0.3s ease;
+	.info {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		z-index: 2;
 
-    @media (max-width: 1400px) {
-      transform: translateY(0);
-    }
-  }
+		@media (max-width: 1400px) {
+			transform: translateY(0);
+		}
+	}
 
-  .subtitle {
-    display: flex;
-    gap: 4px;
-  }
+	.subtitle {
+		display: flex;
+		gap: 4px;
+	}
 
-  .stack {
-    opacity: 0;
-    user-select: none;
-    transition:
-      opacity 0.3s,
-      color 0.3s;
+	.star {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		z-index: 3;
+	}
 
-    &:hover {
-      color: var(--white-color);
-    }
+	.project-link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 5;
+		background-color: transparent;
+		transition: background-color 0.3s;
+	}
 
-    @media (max-width: 1400px) {
-      opacity: 1;
-    }
-  }
+	.blackout {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: transparent;
+		transition: background-color 0.3s;
 
-  .hr-line {
-    width: 95%;
-    border-top: 1px solid var(--gray10-color);
-    opacity: 0;
-    transition: opacity 0.3s;
-
-    @media (max-width: 1400px) {
-      opacity: 1;
-    }
-  }
-
-  .star {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    z-index: 3;
-  }
-
-  .project-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5;
-    background-color: transparent;
-    transition: background-color 0.3s;
-  }
-
-  .blackout {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    transition: background-color 0.3s;
-
-    @media (max-width: 1400px) {
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-  }
+		@media (max-width: 1400px) {
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+	}
 }
