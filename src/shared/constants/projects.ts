@@ -2,7 +2,7 @@ import type { ProjectCardProps } from '../types/project.type';
 
 export const projects: ProjectCardProps[] = [
 	{
-		title: 'Film Flow',
+		title: 'Clud',
 		team: true,
 		bgImg: 'blue',
 		link: '/clud',

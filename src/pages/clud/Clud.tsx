@@ -1,4 +1,3 @@
-import Silk from "@/shared/ui/Silk/Silk";
 import styles from "./Clud.module.scss"
 import Title from "@/shared/ui/Typography/Title";
 import Subtitle from '@/shared/ui/Typography/Subtitle';
@@ -14,7 +13,7 @@ export default function Clud() {
 					<ArrowLeft size={28} />
 				</Link>
 				<div className={styles.titleContainer}>
-					<Title size="xl">Film Flow</Title>
+					<Title size="xl">Clud</Title>
 					<Subtitle>✦ How It All Works</Subtitle>
 				</div>
 			</header>
@@ -25,7 +24,7 @@ export default function Clud() {
 						promise, it'll be epic. Soon. Now you can click on the link below.
 					</Title>
 					<a
-						href="https://github.com/Kaden09/Kino.git"
+						href="https://github.com/Kaden09/clud.git"
 						target="_blank"
 						rel="noopener noreferrer"
 						className={styles['github-button']}>
@@ -36,15 +35,6 @@ export default function Clud() {
 					</a>
 				</div>
 			</main>
-			<div className={styles.animatedBg}>
-				<Silk
-					speed={5}
-					scale={1}
-					color="#384fffff"
-					noiseIntensity={1.5}
-					rotation={0}
-				/>
-			</div>
 		</div>
 	);
 }

@@ -6,7 +6,6 @@ import Skills from '@/widgets/Skills/Skills';
 import AboutMe from '@/widgets/AboutMe/AboutMe';
 import Projects from '@/widgets/Projects/Projects';
 import Profile from '@/widgets/Profile/Profile';
-import Silk from '@/shared/ui/Silk/Silk';
 
 export default function MainPage() {
 	return (
@@ -24,15 +23,6 @@ export default function MainPage() {
 				<Codewars />
 				<WorkTogether />
 			</footer>
-			<div className={styles.animatedBg}>
-				<Silk
-					speed={5}
-					scale={1}
-					color="#384fffff"
-					noiseIntensity={1.5}
-					rotation={0}
-				/>
-			</div>
 		</div>
 	);
 }

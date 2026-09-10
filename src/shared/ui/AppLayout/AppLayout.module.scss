@@ -1,0 +1,21 @@
+.animatedBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 8px;
+	height: 100%;
+	width: clamp(18.75rem, 8.786rem + 49.821vw, 53.625rem);
+
+    @media (max-width: 1300px) {
+		padding: 50px 0;
+	}
+}

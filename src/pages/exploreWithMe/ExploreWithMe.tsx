@@ -1,4 +1,3 @@
-import Silk from '@/shared/ui/Silk/Silk';
 import styles from './ExploreWithMe.module.scss';
 import Title from '@/shared/ui/Typography/Title';
 import Subtitle from '@/shared/ui/Typography/Subtitle';
@@ -48,15 +47,6 @@ export default function ExploreWithMe() {
 					</a>
 				</div>
 			</main>
-			<div className={styles.animatedBg}>
-				<Silk
-					speed={5}
-					scale={1}
-					color="#384fffff"
-					noiseIntensity={1.5}
-					rotation={0}
-				/>
-			</div>
 		</div>
 	);
 }
