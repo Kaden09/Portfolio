@@ -10,6 +10,7 @@ import RedProjectShape from '@/shared/assets/icons/redProjectShape.svg?react';
 import OrangeProjectShape from '@/shared/assets/icons/orangeProjectShape.svg?react';
 import cx from 'classix';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const shapeMap = {
 	blue: BlueProjectShape,
@@ -23,10 +24,12 @@ function ProjectCard({
 	bgImg = 'blue',
 	link = '',
 }: ProjectCardProps) {
-  const Shape = shapeMap[bgImg];
+	const Shape = shapeMap[bgImg];
+	const { t } = useTranslation();
 
 	return (
-		<Link to={link}
+		<Link
+			to={link}
 			className={cx(styles['project-card'], styles[`project-card__${bgImg}`])}>
 			<div className={styles.info}>
 				<div className={styles.title}>
@@ -34,7 +37,7 @@ function ProjectCard({
 					<div className={styles.subtitle}>
 						{team ? <DoubleStarIcon /> : <StarIcon />}
 						<Subtitle color="white10">
-							{team ? 'Team project' : 'Solo Project'}
+							{team ? t('projectCard.team') : t('projectCard.solo')}
 						</Subtitle>
 					</div>
 				</div>

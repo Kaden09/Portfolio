@@ -13,9 +13,12 @@
   "dependencies": {
     "@react-three/fiber": "^9.7.0",
     "classix": "^2.2.2",
+    "i18next": "^26.4.2",
+    "i18next-browser-languagedetector": "^8.2.1",
     "lucide-react": "^1.43.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-i18next": "^17.0.13",
     "react-router-dom": "^7.18.3",
     "three": "^0.185.1"
   },

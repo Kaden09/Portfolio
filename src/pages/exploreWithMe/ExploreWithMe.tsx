@@ -2,11 +2,14 @@ import styles from './ExploreWithMe.module.scss';
 import Title from '@/shared/ui/Typography/Title';
 import Subtitle from '@/shared/ui/Typography/Subtitle';
 import Text from '@/shared/ui/Typography/Text';
-import GitHubIcon from '@/shared/assets/icons/github.svg?react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import GitHubButton from '@/shared/ui/GitHubButton/GitHubButton';
 
 export default function ExploreWithMe() {
+	const { t } = useTranslation();
+
 	return (
 		<div className={styles.wrapper}>
 			<header>
@@ -31,20 +34,11 @@ export default function ExploreWithMe() {
 					</Text>
 				</div>
 				<div className={styles.inDevelopment}>
-					<Title size="lg">
-						This area is pending… mostly because I keep changing my mind. But I
-						promise, it'll be epic. Soon. Now you can click on the link below.
-					</Title>
-					<a
-						href="https://github.com/Kaden09/java-explore-with-me.git"
-						target="_blank"
-						rel="noopener noreferrer"
-						className={styles['github-button']}>
-						<GitHubIcon />
-						<Title size="md" className={styles['text-short']}>
-							This project on GitHub
-						</Title>
-					</a>
+					<Title size="lg">{t('pages.pending')}</Title>
+					<GitHubButton
+						content={t('github.project')}
+						link="https://github.com/Kaden09/java-explore-with-me.git"
+					/>
 				</div>
 			</main>
 		</div>

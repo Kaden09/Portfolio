@@ -6,6 +6,7 @@ import Clud from '@/pages/clud/Clud';
 import KillCode from '@/pages/killCode/KillCode';
 import ExploreWithMe from '@/pages/exploreWithMe/ExploreWithMe';
 import AppLayout from '@/shared/ui/AppLayout/AppLayout';
+import "@/shared/config/i18n";
 
 const router = createBrowserRouter([
 	{

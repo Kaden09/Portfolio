@@ -8,24 +8,27 @@ import {
 	frontendSkills,
 	toolsAndDevops,
 } from '@/shared/constants/skills';
+import { useTranslation } from 'react-i18next';
 
 function Skills() {
+	const { t } = useTranslation();
+
 	return (
 		<div className={styles.skills}>
 			<div className={styles.title}>
-				<Title size="xl">My Knowledge and Skills.</Title>
-				<Subtitle>✦ My journey so far</Subtitle>
+				<Title size="xl">{t('skills.title')}</Title>
+				<Subtitle>{t('skills.subtitle')}</Subtitle>
 			</div>
 			<section className={styles.skills__section}>
-				<Title size="lg">Frontend Skills:</Title>
+				<Title size="lg">{t('skills.frontend')}</Title>
 				<SkillsList skills={frontendSkills} />
 			</section>
 			<section className={styles.skills__section}>
-				<Title size="lg">Backend Skills:</Title>
+				<Title size="lg">{t('skills.backend')}</Title>
 				<SkillsList skills={backendSkills} />
 			</section>
 			<section className={styles.skills__section}>
-				<Title size="lg">Tools and DevOps:</Title>
+				<Title size="lg">{t('skills.tools')}</Title>
 				<SkillsList skills={toolsAndDevops} />
 			</section>
 			<SkillsBgShape className={styles.bgShape} />

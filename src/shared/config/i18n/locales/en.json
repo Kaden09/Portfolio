@@ -1,0 +1,57 @@
+{
+	"profile": {
+		"title": "✦ WEB DEVELOPER",
+		"name": "Maxim Volkov.",
+		"role": "I'm Fullstack Developer",
+		"location": "Location: Russia ✦ Glazov"
+	},
+	"about": {
+		"title": "A Few Words About Myself.",
+		"subtitle": "✦ Getting to Know Me",
+		"text1": "Fullstack Developer with 3+ years of coding experience, though my primary expertise lies in frontend development. I work daily with React and Next.js, using TypeScript, Tailwind, and Feature-Sliced Design (FSD) for scalable architectures—opting for a modular approach on smaller projects.",
+		"text2": "That said, I'm equally capable of building complete backend systems from scratch. My server-side stack includes Java, Spring Boot, and PostgreSQL, and I have hands-on experience with Kafka, Redis, Docker, and Kubernetes for microservices and distributed applications. I can confidently deliver full-stack solutions end-to-end.",
+		"text3": "I also design interfaces in Figma from the ground up, because I believe great code deserves great aesthetics.",
+		"text4": "For the past year, I've been working at KillCode studio, handling client-side development in a team environment. I regularly participate in code reviews, collaborate closely with other developers, and follow clean Git workflows. Outside of work, I've mentored fellow developers during their learning journey, helped them grow, and even led small teams on pet projects.",
+		"text5": "I'm looking for ambitious projects where I can contribute both as a frontend specialist or as a fullstack developer—ideally in a strong team that values clean code, thoughtful design, and real engineering challenges."
+	},
+	"skills": {
+		"title": "My Knowledge and Skills.",
+		"subtitle": "✦ My journey so far",
+		"frontend": "Frontend Skills:",
+		"backend": "Backend Skills:",
+		"tools": "Tools and DevOps:"
+	},
+	"projects": {
+		"title": "My Incredible Projects.",
+		"subtitle": "✦ Key points"
+	},
+	"contacts": {
+		"title": "Ways to Reach Me.",
+		"subtitle": "✦ Let's get in touch"
+	},
+	"workTogether": "Let's Work Together!",
+	"github": {
+		"full": "View More on GitHub",
+		"short": "GitHub",
+        "project": "This Project on GitHub"
+	},
+	"projectCard": {
+		"team": "Team project",
+		"solo": "Solo Project"
+	},
+	"pages": {
+		"pending": "This area is pending… mostly because I keep changing my mind. But I promise, it'll be epic. Soon. Now you can click on the link below.",
+		"overview": "Overview",
+		"exploreWithMe": {
+			"subtitle": "✦ How It All Works",
+			"description": "Explore With Me is a backend event management platform built as a diploma project. The system allows users to create, discover, and participate in local events — from movie premieres to sports marathons. It follows a microservice architecture with two independently deployable services, a clean layered codebase, and Docker-based orchestration."
+		}
+	},
+	"common": {
+		"projectSubtitle": "✦ How It All Works"
+	},
+	"meta": {
+		"title": "My Portfolio",
+		"description": "Portfolio of a Fullstack developer"
+	}
+}

@@ -3,17 +3,20 @@ import ProjectsList from '@/shared/ui/ProjectsList/ProjectsList';
 import styles from './Projects.module.scss';
 import Title from '@/shared/ui/Typography/Title';
 import GitHubButton from '@/shared/ui/GitHubButton/GitHubButton';
+import { useTranslation } from 'react-i18next';
 
 function Projects() {
+	const { t } = useTranslation();
+	
 	return (
 		<div className={styles.projects}>
 			<ProjectsList />
 			<div className={styles.info}>
 				<div className={styles.title}>
-					<Subtitle>✦ Key points</Subtitle>
-					<Title>My Incredible Projects.</Title>
+					<Subtitle>{t('projects.subtitle')}</Subtitle>
+					<Title>{t('projects.title')}</Title>
 				</div>
-				<GitHubButton />
+				<GitHubButton content={t('github.full')}/>
 			</div>
 		</div>
 	);

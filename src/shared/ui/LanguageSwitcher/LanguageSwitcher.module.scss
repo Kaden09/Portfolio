@@ -1,0 +1,25 @@
+@use '@/app/styles/mixins.scss' as *;
+
+.switcher {
+    @include glass-card(185deg);
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    border-radius: 16px;
+    overflow: hidden;
+
+    button {
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #3e7fff46;
+        }
+    }
+
+    .active {
+        background: #3e7fff71;
+    }
+}
