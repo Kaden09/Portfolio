@@ -32,106 +32,138 @@ import Grafana from '@/shared/assets/skills/Grafana.svg?react';
 
 export interface Skill {
 	icon: React.FC<React.SVGProps<SVGSVGElement>>;
+	label: string;
 }
 
 export const frontendSkills: Skill[] = [
 	{
 		icon: HTML,
+		label: 'HTML',
 	},
 	{
 		icon: CSS,
+		label: 'CSS',
 	},
 	{
 		icon: JavaScript,
+		label: 'JavaScript',
 	},
 	{
 		icon: TypeScript,
+		label: 'TypeScript',
 	},
 	{
 		icon: Sass,
+		label: 'Sass',
 	},
 	{
 		icon: Redux,
+		label: 'Redux',
 	},
 	{
 		icon: React,
+		label: 'React',
 	},
 	{
 		icon: NextJS,
+		label: 'Next.js',
 	},
 	{
 		icon: Tailwind,
+		label: 'Tailwind',
 	},
 ];
 
 export const backendSkills: Skill[] = [
 	{
 		icon: Java,
+		label: 'Java',
 	},
 	{
 		icon: Spring,
+		label: 'Spring',
 	},
 	{
 		icon: Hibernate,
+		label: 'Hibernate',
 	},
 	{
 		icon: Kafka,
+		label: 'Kafka',
 	},
 	{
 		icon: Redis,
+		label: 'Redis',
 	},
 	{
 		icon: Postgres,
+		label: 'PostgreSQL',
 	},
 ];
 
 export const toolsAndDevops: Skill[] = [
 	{
 		icon: Docker,
+		label: 'Docker',
 	},
 	{
 		icon: Kubernetes,
+		label: 'Kubernetes',
 	},
 	{
 		icon: Maven,
+		label: 'Maven',
 	},
 	{
 		icon: Yarn,
+		label: 'Yarn',
 	},
 	{
 		icon: Pnpm,
+		label: 'Pnpm',
 	},
 	{
 		icon: Vite,
+		label: 'Vite',
 	},
 	{
 		icon: GitHub,
+		label: 'GitHub',
 	},
 	{
 		icon: Bun,
+		label: 'Bun',
 	},
 	{
 		icon: Linux,
+		label: 'Linux',
 	},
 	{
 		icon: Postman,
+		label: 'Postman',
 	},
 	{
 		icon: Prometheus,
+		label: 'Prometheus',
 	},
 	{
 		icon: Grafana,
+		label: 'Grafana',
 	},
 	{
 		icon: Figma,
+		label: 'Figma',
 	},
 	{
 		icon: Photoshop,
+		label: 'Photoshop',
 	},
 	{
 		icon: VSCode,
+		label: 'VSCode',
 	},
 	{
 		icon: Idea,
+		label: 'IntellijIDEA',
 	},
 ];
