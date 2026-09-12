@@ -9,24 +9,9 @@
 	height: 100%;
 	width: clamp(18.75rem, 8.786rem + 49.821vw, 53.625rem);
 
-    header {
-		display: flex;
-		gap: 8px;
-		width: 100%;
+    
 
-		.backButton {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			min-width: 90px;
-		}
-
-		.titleContainer {
-			flex: 1;
-		}
-	}
-
-    .backButton, .titleContainer, .inDevelopment {
+    header, .inDevelopment {
         @include glass-card(185deg);
 
         padding: 20px;

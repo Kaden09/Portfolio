@@ -33,22 +33,54 @@
 	"github": {
 		"full": "View More on GitHub",
 		"short": "GitHub",
-        "project": "This Project on GitHub"
+		"project": "This Project on GitHub"
 	},
 	"projectCard": {
 		"team": "Team project",
 		"solo": "Solo Project"
 	},
 	"pages": {
-		"pending": "This area is pending… mostly because I keep changing my mind. But I promise, it'll be epic. Soon. Now you can click on the link below.",
-		"overview": "Overview",
-		"exploreWithMe": {
-			"subtitle": "✦ How It All Works",
-			"description": "Explore With Me is a backend event management platform built as a diploma project. The system allows users to create, discover, and participate in local events — from movie premieres to sports marathons. It follows a microservice architecture with two independently deployable services, a clean layered codebase, and Docker-based orchestration."
-		}
+		"pending": "This area is pending… mostly because I keep changing my mind. But I promise, it'll be epic. Soon. Now you can click on the link below."
 	},
 	"common": {
-		"projectSubtitle": "✦ How It All Works"
+		"projectSubtitle": "✦ How It All Works",
+        "backButton": "Back"
+	},
+	"project": {
+		"exploreWithMe": {
+			"overview": {
+				"title": "Overview",
+				"content": "Explore With Me is a platform for discovering events and coordinating people who want to attend them. Built from scratch as my graduate diploma project, it's a complete microservices REST application: users create events, discover others' events via search filters, and request to join; admins moderate everything."
+			},
+			"stack": {
+				"title": "Tech stack",
+                "option3": "PostgreSQL 16, REST-client on Spring RestClient",
+                "option4": "Docker Compose (4 containers: two apps + two DB)",
+                "option5": "Maven (multi‑module assembly), Lombok, Spring Boot Actuator",
+                "option6": "Code quality: Checkstyle, SpotBugs, JaCoCo (coverage threshold in the assembly)"
+			},
+			"architecture": {
+				"title": "Architecture",
+				"paragraph1": "Two microservices as separate Maven modules. The main service (port 8080) handles all business logic — users, events, categories, compilations, participation requests and comments. A dedicated stats service (port 9090) records page hits and aggregates view counters; the main service calls it over HTTP through its own REST client and enriches events with live view data. Each service has its own PostgreSQL database, and everything deploys with a single docker compose up.",
+				"paragraph2": "Access control follows URL conventions: admin endpoints (/admin), user endpoints (/users/{id}), and read-only public endpoints that only expose published data."
+			},
+			"functional": {
+				"title": "Key features",
+				"option1": "Event management with a full lifecycle. Users create events and send them for review; admins publish or reject them. Edge cases are handled: moderation only from the PENDING state, no editing after publication, events must start at least 2 hours ahead.",
+				"option2": "Search & sorting. Public catalog with full-text search (annotation + description), filters for categories, paid/free, date range, and \"only available places\". Sorting by event date or by views, counted live from the stats service (including unique-by-IP).",
+				"option3": "Participation requests. Join events respecting participant limits; auto-approval for events without moderation; cancel own requests; bulk approve/reject for the owner.",
+				"option4": "Compilations - pinned and regular event collections managed by admins.",
+				"option5": "Comments - my own extension beyond the original spec: commenting only on published events, author-only editing, admin moderation/deletion.",
+				"option6": "Categories & users, location deduplication by coordinates, consistent pagination, and a unified error handler with correct HTTP semantics (400/404/409)."
+			},
+			"decisions": {
+				"title": "Engineering notes",
+				"option1": "JPA Specifications for flexible filter combinations",
+				"option2": "DB schema versioned in the repo via schema.sql instead of Hibernate-generated DDL",
+				"option3": "CI-quality gates - Checkstyle on every build, SpotBugs, and JaCoCo coverage thresholds.",
+				"paragraph1": "The project shows a full microservices journey: from data modeling and cross-service integration to error handling and containerized deployment with disciplined code quality."
+			}
+		}
 	},
 	"meta": {
 		"title": "My Portfolio",

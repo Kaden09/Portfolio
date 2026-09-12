@@ -1,0 +1,14 @@
+@use '@/app/styles/mixins.scss' as *;
+
+.button {
+	@include glass-card(185deg);
+
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	border-radius: 16px;
+}

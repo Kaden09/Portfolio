@@ -15,11 +15,15 @@
         transition: all 0.3s ease;
 
         &:hover {
-            background: #3e7fff46;
+            background: #3e65ff46;
         }
     }
 
     .active {
-        background: #3e7fff71;
+        background: #3e65ff71;
+
+        &:hover {
+            background: #3e65ff71;
+        }
     }
 }

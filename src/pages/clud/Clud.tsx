@@ -1,24 +1,17 @@
-import styles from "./Clud.module.scss"
-import Title from "@/shared/ui/Typography/Title";
+import styles from './Clud.module.scss';
+import Title from '@/shared/ui/Typography/Title';
 import Subtitle from '@/shared/ui/Typography/Subtitle';
-import { Link } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
-import GitHubButton from "@/shared/ui/GitHubButton/GitHubButton";
-import { useTranslation } from "react-i18next";
+import GitHubButton from '@/shared/ui/GitHubButton/GitHubButton';
+import { useTranslation } from 'react-i18next';
 
 export default function Clud() {
-    const { t } = useTranslation();
-    
+	const { t } = useTranslation();
+
 	return (
 		<div className={styles.wrapper}>
 			<header>
-				<Link className={styles.backButton} to="/">
-					<ArrowLeft size={28} />
-				</Link>
-				<div className={styles.titleContainer}>
-					<Title size="xl">Clud</Title>
-					<Subtitle>✦ How It All Works</Subtitle>
-				</div>
+				<Title size="xl">Clud</Title>
+				<Subtitle>✦ How It All Works</Subtitle>
 			</header>
 			<main>
 				<div className={styles.inDevelopment}>

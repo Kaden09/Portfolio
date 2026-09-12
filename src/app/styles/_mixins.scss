@@ -9,9 +9,9 @@
 
 @mixin glass-card($gradient-angle: 185deg) {
 	border-radius: 20px;
-	background: linear-gradient($gradient-angle, #071d4974, #3f79eb74);
-	border: 1px solid #214da3;
-	border-bottom-color: #194294;
-	border-left-color: #194294;
+	background: linear-gradient($gradient-angle, #07174974, #3f64eb74);
+	border: 1px solid #2134a3;
+	border-bottom-color: #193494;
+	border-left-color: #193494;
 	backdrop-filter: blur(13px);
 }
