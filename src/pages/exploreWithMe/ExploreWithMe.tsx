@@ -13,7 +13,9 @@ export default function ExploreWithMe() {
 		<div className={styles.wrapper}>
 			<header>
 				<div>
-					<Title size="xl">Explore With Me</Title>
+					<Title size="xl">
+						Explore With Me
+					</Title>
 					<Subtitle>{t('common.projectSubtitle')}</Subtitle>
 				</div>
 				<GitHubButton

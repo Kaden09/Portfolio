@@ -11,45 +11,82 @@
 
     
 
-    header, .inDevelopment {
+    header {
         @include glass-card(185deg);
 
-        padding: 20px;
-        opacity: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+        padding: 20px 40px;
+		opacity: 0;
         animation: fadeIn 0.4s ease forwards;
     }
 
-	.inDevelopment {
+    .overview,
+	.stack,
+	.architecture,
+	.functional,
+	.decisions {
+		@include glass-card(185deg);
+
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 20px;
+
+		line-height: 22px;
+        padding: 40px;
+		opacity: 0;
+        animation: fadeIn 0.4s ease forwards;
+	}
+
+	.overview {
+		animation-delay: 0.05s;
+	}
+	.stack {
+		animation-delay: 0.1s;
+	}
+	.architecture {
+		animation-delay: 0.15s;
+	}
+	.functional {
+		animation-delay: 0.2s;
+	}
+	.decisions {
+		animation-delay: 0.25s;
+	}
+
+    .createdBy {
+		@include glass-card(185deg);
+
+		display: flex;
+
+        padding: 20px 40px;
+		opacity: 0;
+        animation: fadeIn 0.4s ease forwards;
+	}
+
+    .list {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		margin-left: 20px;
+	}
+
+	.titleContainer {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.title {
+		display: flex;
 		align-items: center;
-		justify-content: center;
-		text-align: center;
-		min-height: 400px;
-		padding: 100px;
-        animation-delay: 0.05s;
+		gap: 12px;
 	}
 
 	main {
 		display: flex;
 		flex-direction: column;
 		gap: 8px;
-	}
-
-	.github-button {
-		display: flex;
-		align-items: center;
-		gap: 8px;
-		padding: 8px 24px;
-	  white-space: nowrap;
-		background-color: #386acdba;
-		border-radius: 12px;
-		transition: background-color 0.3s ease;
-
-		&:hover {
-			background-color: #386acdea;
-		}
 	}
 
 	@media (max-width: 1300px) {

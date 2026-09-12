@@ -54,10 +54,10 @@
 			},
 			"stack": {
 				"title": "Tech stack",
-                "option3": "PostgreSQL 16, REST-client on Spring RestClient",
-                "option4": "Docker Compose (4 containers: two apps + two DB)",
-                "option5": "Maven (multi‑module assembly), Lombok, Spring Boot Actuator",
-                "option6": "Code quality: Checkstyle, SpotBugs, JaCoCo (coverage threshold in the assembly)"
+				"option3": "PostgreSQL 16, REST-client on Spring RestClient",
+				"option4": "Docker Compose (4 containers: two apps + two DB)",
+				"option5": "Maven (multi‑module assembly), Lombok, Spring Boot Actuator",
+				"option6": "Code quality: Checkstyle, SpotBugs, JaCoCo (coverage threshold in the assembly)"
 			},
 			"architecture": {
 				"title": "Architecture",
@@ -79,6 +79,36 @@
 				"option2": "DB schema versioned in the repo via schema.sql instead of Hibernate-generated DDL",
 				"option3": "CI-quality gates - Checkstyle on every build, SpotBugs, and JaCoCo coverage thresholds.",
 				"paragraph1": "The project shows a full microservices journey: from data modeling and cross-service integration to error handling and containerized deployment with disciplined code quality."
+			}
+		},
+		"killCode": {
+			"overview": {
+				"title": "Overview",
+				"content": "KillCode Studio is a conversion-focused landing page and portfolio for a software development studio: the site presents the studio's services, workflow, and client cases while doubling as a live showcase of real projects. It was built from scratch on a modern stack and shipped to production — responsive, bilingual, and animated in nearly every section."
+			},
+			"stack": {
+				"title": "Технологический стек",
+				"option6": "Code quality: strict TypeScript (verbatimModuleSyntax), ESLint with React rules, unified Prettier formatting"
+			},
+			"architecture": {
+				"title": "Architecture",
+				"content": "The project uses a feature-based structure. Each feature (hero, products, portfolio, contacts, etc.) lives in its own folder with its components, hooks, and types, while reusable entities are extracted into shared (icons, images, the i18n context, and utilities). Section data — services, growth steps, portfolio cases — is not scattered across components: it is re-derived from the active language through memoized hooks, which kept adding new sections and translations predictable."
+			},
+			"functional": {
+				"title": "Key features",
+				"option1": "Five-section landing. A hero with an animated editor window, a typewriter effect, and Python syntax highlighting; infinite CSS marquee carousels of services; an advantages block; an animated studio-growth timeline; and an interactive \"how to order\" diagram with an SVG stroke-draw line and step markers.",
+				"option2": "A 12-case portfolio. Every case ships with an image, a price in USD, and its stack: a banking RAG platform, a Go + WebSocket marketplace CRM, VPN infrastructure, Aiogram Telegram bots, parsers, and Figma design.",
+				"option3": "Full RU/EN localization. A custom, fully typed i18n system: language is resolved from localStorage and browser settings and switched with a header dropdown; all content — including portfolio data — lives in locale dictionaries.",
+				"option4": "Contact form. Validation via react-hook-form + yup with localized error messages, async submission to an API through axios with an auth key, and full loading/success/error state handling.",
+				"option5": "SEO & responsiveness. Per-page title and meta via react-helmet-async, robots.txt, sitemap, and favicon configured; every landing section has a dedicated mobile variant."
+			},
+			"decisions": {
+				"title": "Engineering notes",
+				"option1": "A typed i18n dictionary contract means any missing key between RU and EN is caught at compile time.",
+				"option2": "The validation schema is rebuilt per language, so error translations live in one place.",
+				"option3": "Animations are driven by react-intersection-observer — elements reveal as they enter the viewport instead of firing on timers.",
+				"option4": "Сustom keyframe animations and the brand palette are centralized in Tailwind's @theme.",
+				"paragraph1": "The project shows how to build a modern production site from scratch — from data structure and a localization system to responsiveness and living animations — without sacrificing code cleanliness or maintainability."
 			}
 		}
 	},
