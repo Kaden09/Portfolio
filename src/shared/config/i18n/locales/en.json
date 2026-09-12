@@ -87,7 +87,7 @@
 				"content": "KillCode Studio is a conversion-focused landing page and portfolio for a software development studio: the site presents the studio's services, workflow, and client cases while doubling as a live showcase of real projects. It was built from scratch on a modern stack and shipped to production — responsive, bilingual, and animated in nearly every section."
 			},
 			"stack": {
-				"title": "Технологический стек",
+				"title": "Tech stack",
 				"option6": "Code quality: strict TypeScript (verbatimModuleSyntax), ESLint with React rules, unified Prettier formatting"
 			},
 			"architecture": {
@@ -109,6 +109,43 @@
 				"option3": "Animations are driven by react-intersection-observer — elements reveal as they enter the viewport instead of firing on timers.",
 				"option4": "Сustom keyframe animations and the brand palette are centralized in Tailwind's @theme.",
 				"paragraph1": "The project shows how to build a modern production site from scratch — from data structure and a localization system to responsiveness and living animations — without sacrificing code cleanliness or maintainability."
+			}
+		},
+		"clud": {
+            "title": "Clud (In development)",
+			"overview": {
+				"title": "Overview",
+				"paragraph1": "Clud is an educational cloud file storage service similar to Google Drive — but with a clear mission: not to clone a commercial product, but to get deep hands-on experience building a distributed system with Java and Spring Boot. Every feature in the project exists only if it provides useful engineering practice in architecture, correctness, testing, and observability.",
+				"paragraph2": "The system allows users to register and log in, create folders, upload and download files, browse directory contents, rename and move items, delete and restore files from Trash, and generate public links with expiration.",
+                "paragraph3": "In the near future, development of the frontend part will begin."
+			},
+			"stack": {
+				"title": "Tech stack",
+				"option2": "PostgreSQL, Redis, MinIO (S3-compatible object storage)",
+				"option3": "RabbitMQ/Kafka message broker",
+				"option5": "REST + OpenAPI documentation",
+				"option6": "JUnit, Testcontainers, integration and E2E tests"
+			},
+			"architecture": {
+				"title": "Architecture",
+				"content": "The system is decomposed into independent microservices, each owning its own data. The API Gateway is the single entry point and handles routing, authentication, rate limiting, and request/correlation IDs. The Identity Service is responsible for registration, login, refresh tokens, and user management. The File Service owns file and folder metadata, directory structure, rename/move logic, and the Trash. The Storage Service deals only with binary data — upload, download, and deletion in MinIO/S3. Finally, the Sharing Service manages public links: creation, expiration, and revocation. This separation keeps each service small, focused, and independently deployable."
+			},
+			"functional": {
+				"title": "Key features",
+				"option1": "Full microservices practice: HTTP communication between services, asynchronous events through a message broker (UserRegistered, FileUploaded, FileDeleted, FileShared), retries, timeouts, and idempotency, and eventual consistency instead of transactions across service boundaries.",
+				"option2": "Complete file lifecycle: folders, upload/download, rename, move, soft-delete to Trash, and restore.",
+				"option3": "Authentication flow with refresh tokens and logout.",
+				"option4": "Public sharing: link generation, expiration, and revocation.",
+				"option5": "Observability built-in from day one: health checks, centralized logging, metrics via Micrometer/Prometheus, and distributed tracing via OpenTelemetry.",
+				"option6": "Full startup automation on Docker Compose, with CI on GitHub Actions that builds and tests every change."
+			},
+			"decisions": {
+				"title": "Engineering notes",
+				"option1": "Strict separation of concerns: metadata lives in PostgreSQL, binary data lives in object storage, sessions in Redis — each owned by its owning service.",
+				"option2": "A minimal, justified set of events kept the broker topology simple while still demonstrating async communication, retries, and idempotency.",
+				"option3": "Anything that is not required for learning was explicitly cut: no collaborative editing, no complex permissions, no Kubernetes, no multi-region deployment — a deliberate and documented scope.",
+				"option4": "The project is structured in phases (foundation, core operations, microservices, sharing, production practices), so complexity grows only when the underlying engineering concepts are solid.",
+				"paragraph1": "The result is a project that demonstrates the entire lifecycle of a distributed system — from service design and inter-service communication to tests, deployment, and production observability — built cleanly from the ground up."
 			}
 		}
 	},

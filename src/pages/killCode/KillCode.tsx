@@ -18,7 +18,7 @@ export default function KillCode() {
 				</div>
 				<GitHubButton
 					content={t('github.project')}
-					link="https://github.com/Kaden09/java-explore-with-me.git"
+					link="https://github.com/Kaden09/KillCode.git"
 				/>
 			</header>
 			<main>
